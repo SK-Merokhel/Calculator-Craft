@@ -1,0 +1,44 @@
+=== Project Overview ===
+
+This project is a simple calculator implemented in TypeScript. Let's document its setup and dependencies.
+
+=== What is npm? ===
+
+npm stands for Node Package Manager. It's a package manager primarily used for managing dependencies in Node.js projects. Developers can specify and manage dependencies for their projects via a package.json file.
+
+1. Run `npm init` to initialize a new npm project. This command guides you through creating a package.json file, containing metadata about your project and its dependencies.
+
+2. Initiate TypeScript by running `tsc --init`. This creates a tsconfig.json file, which configures TypeScript compilation settings. Make the following changes in tsconfig.json:
+   - Change "target" to "ES2022".
+   - Change "module" to "NodeNext".
+   - Uncomment and change "moduleResolution" to "NodeNext".
+
+3. Modify package.json:
+   - Add `"type": "module"` to support ES module syntax.
+
+=== What is Inquirer? ===
+
+Inquirer is a Node.js library that simplifies collecting user input via the command line. It's useful for creating interactive command-line interfaces by prompting users with questions and processing their responses.
+
+1. Install Inquirer by running `npm i inquirer`. This library is essential for user interaction in our project.
+
+2. To use Inquirer with TypeScript, install its type definitions using `npm i --save-dev @types/inquirer`.
+
+=== Clarifications ===
+
+0.1 `npm init` initializes npm packages locally, similar to setting up a workspace for a project. Imagine it as preparing a desk with all the tools and materials needed for a specific task.
+
+0.2 npmjs.com acts as a repository for various packages, similar to an online marketplace where you can find products for different needs. For instance, just like you might visit an online store like Amazon to find items for your home, developers visit npmjs.com to find packages for their projects.
+
+0.3 Dependencies are like ingredients in a recipe. Just as a chef needs specific ingredients to make a dish, a developer needs certain dependencies to build a project. npm manages these dependencies, ensuring that the right ingredients are available when needed.
+
+0.4 The "^" sign in dependencies is akin to subscribing to updates for a magazine. When you subscribe to a magazine, you receive new issues as they're released. Similarly, using "^" ensures that your project gets compatible updates for its dependencies automatically.
+
+0.5 We don't need to create each and everything from scratch; we can grab modules from npmjs.com, similar to how you might purchase pre-made furniture instead of building it yourself. For example, if you need a table for your home, you can buy one from a furniture store rather than crafting it from raw materials. Similarly, developers can use pre-made modules from npmjs.com to save time and effort in their projects.
+
+0.6 npm.js acts like a warehouse where the whole world can access and retrieve packages, akin to a vast library where people can borrow books. Just as a library stores a wide range of books on various topics, npm.js hosts a diverse collection of packages for different programming needs.
+
+=== Conclusion ===
+
+By documenting our project setup and dependencies, we ensure clarity and maintainability. These steps demonstrate a thorough understanding of the project and its requirements.
+
